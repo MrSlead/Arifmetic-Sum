@@ -1,13 +1,13 @@
 import java.io.Serializable;
 
-public class ArithmeticSum implements Serializable {
+public class DataBaseInfo implements Serializable {
     private String driver;
     private String url;
     private String name;
     private String password;
     private int N;
 
-    public ArithmeticSum() {
+    public DataBaseInfo() {
     }
 
     public String getDriver() {
