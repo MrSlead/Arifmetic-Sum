@@ -1,11 +1,11 @@
-#Arithmetic Sum
+# Arithmetic Sum
 
 Test task<br>
 link task https://yadi.sk/i/ip1s1UZYTY-0yA
 
 !!! 7 item failed to complete !!!
 
-##Get Started
+## Get Started
 
 1) git clone https://github.com/MrSlead/Arifmetic-Sum.git
 2) Selecting a database and adding a dependency in pom.xml (By default POSTGRESQL)
