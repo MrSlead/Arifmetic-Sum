@@ -1,17 +1,19 @@
+import db_info.DataBaseInfo;
+import enginer.ArithmeticSum;
+
 public class Main {
-    private static DataBaseInfo dataBaseInfo;
-    private static ArithmeticSum arithmeticSum;
 
     public static void main(String[] args) {
-        dataBaseInfo = new DataBaseInfo();
+        DataBaseInfo dataBaseInfo = new DataBaseInfo();
 
         dataBaseInfo.setDriver("org.postgresql.Driver");
         dataBaseInfo.setUrl("jdbc:postgresql://localhost:5432/numbers");
         dataBaseInfo.setName("user");
         dataBaseInfo.setPassword("root");
+        dataBaseInfo.setN(155);
 
-        arithmeticSum = new ArithmeticSum(dataBaseInfo);
+        ArithmeticSum arithmeticSum = new ArithmeticSum(dataBaseInfo);
 
-        arithmeticSum.deleteFields();
+        System.out.println(arithmeticSum.arithmeticSum());
     }
 }

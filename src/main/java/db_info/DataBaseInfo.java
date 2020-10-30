@@ -1,3 +1,5 @@
+package db_info;
+
 import java.io.Serializable;
 
 public class DataBaseInfo implements Serializable {

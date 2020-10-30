@@ -1,3 +1,5 @@
+import db_info.DataBaseInfo;
+import dto.NumberDto;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -5,10 +7,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ArithmeticSumTest {
-    private Logger logger = LoggerFactory.getLogger(ArithmeticSumTest.class);
+   /* private Logger logger = LoggerFactory.getLogger(ArithmeticSumTest.class);
 
     private static DataBaseInfo dataBaseInfo;
-    private static ArithmeticSum arithmeticSum;
+    private static NumberDto numberDto;
 
     @BeforeClass
     public static void setDataBaseInfo() {
@@ -18,23 +20,23 @@ public class ArithmeticSumTest {
         dataBaseInfo.setUrl("jdbc:postgresql://localhost:5432/numbers");
         dataBaseInfo.setName("user");
         dataBaseInfo.setPassword("root");
-        dataBaseInfo.setN(5);
+        dataBaseInfo.setN(8);
 
-        arithmeticSum = new ArithmeticSum(dataBaseInfo);
-    }
-
-    @Test
-    public void getCountFieldsInDB() {
-        Assert.assertEquals(0, arithmeticSum.getCountFieldsInDB());
+        numberDto = new NumberDto(dataBaseInfo);
     }
 
     @Test
     public void deleteFields() {
-        Assert.assertEquals(true, arithmeticSum.deleteFields());
+        Assert.assertEquals(true, numberDto.deleteFields());
+    }
+
+    @Test
+    public void getCountFieldsInDB() {
+        Assert.assertEquals(0, numberDto.getCountFieldsInDB());
     }
 
     @Test
     public void insertFields() {
-        Assert.assertEquals(5, arithmeticSum.insertFieldsInDB(dataBaseInfo));
-    }
+        Assert.assertEquals(5, numberDto.insertFieldsInDB(dataBaseInfo));
+    }*/
 }
