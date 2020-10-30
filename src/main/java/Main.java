@@ -10,7 +10,7 @@ public class Main {
         dataBaseInfo.setUrl("jdbc:postgresql://localhost:5432/numbers");
         dataBaseInfo.setName("postgres");
         dataBaseInfo.setPassword("admin");
-        dataBaseInfo.setN(100);
+        dataBaseInfo.setN(1001);
 
         ArithmeticSum arithmeticSum = new ArithmeticSum(dataBaseInfo);
 
