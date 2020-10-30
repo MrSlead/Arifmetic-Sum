@@ -183,9 +183,7 @@ public class NumberDto {
                 /*if(!Files.exists(Paths.get(getClass().getResourceAsStream(xmlPath1).toString()))) {
                     Path fileXML = Files.createFile(Paths.get(getClass().getResourceAsStream(xmlPath1).toString()));
                 }*/
-
-                logger.info(String.valueOf(getClass().getResource(xmlPath1)));
-                logger.info(Paths.get(getClass().getResource(xmlPath1).toURI()).toString());
+                
                 Files.write(Paths.get(getClass().getResource(xmlPath1).toURI()), writer.toString().getBytes());
                 logger.debug("Created xml file with fields of number");
 

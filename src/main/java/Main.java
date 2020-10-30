@@ -8,9 +8,9 @@ public class Main {
 
         dataBaseInfo.setDriver("org.postgresql.Driver");
         dataBaseInfo.setUrl("jdbc:postgresql://localhost:5432/numbers");
-        dataBaseInfo.setName("user");
-        dataBaseInfo.setPassword("root");
-        dataBaseInfo.setN(155);
+        dataBaseInfo.setName("postgres");
+        dataBaseInfo.setPassword("admin");
+        dataBaseInfo.setN(100);
 
         ArithmeticSum arithmeticSum = new ArithmeticSum(dataBaseInfo);
 
